@@ -1,0 +1,108 @@
+@include media-md{
+    .contacts{
+        flex-direction: column;
+        a{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 1rem;
+        }
+        i{
+            justify-self: end;
+        }
+    }
+    .about__jobs {
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+@include media-lg{
+    /*.menu-btn{
+        visibility: hidden;
+    }
+    .nav{
+        visibility: visible  ;
+    }
+    .menu-nav{
+        display: block;
+        transform: translateY(0);
+        height: 100%;
+        background: transparent;
+        text-align: right;
+        &__item{
+           display: inline;
+           padding-right: 1.5rem;
+        }
+        &__link{
+            font-size: 1.5rem;
+        }
+    }*/
+    .menu-btn {
+        visibility: hidden;
+      }
+    
+      .nav {
+        visibility: visible;
+    
+        .menu-nav {
+          display: block;
+          transform: translateY(0);
+          height: 100%;
+          background: transparent;
+          text-align: right;
+    
+          &__item {
+            display: inline;
+            padding-right: 1.5rem;
+          }
+    
+          &__link {
+            font-size: 1.5rem;
+          }
+        }
+      }
+
+   .about__jobs {
+        grid-template-columns: 1fr 1fr;
+    }
+    .about__bio{
+        font-size: 1.5rem;
+    }
+    .projects__items{
+        grid-template-columns: 1fr 1fr;
+        width: 80vw;
+    }
+    .projects__item{
+        margin-right: 2rem;
+        
+    }
+    .projects__btns{
+        
+        font-size: 2vw;
+    }
+}
+
+@include media-xl{
+    .about__jobs {
+        grid-template-columns: 1fr 1fr;
+        font-size: 1.1rem;
+    }
+    .about__bio{
+        font-size: 1.5rem;
+    }
+    .projects__items{
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80vw;
+    }
+    .projects__item{
+        margin-right: 2rem;
+        
+    }
+    .projects__btns{
+        
+        font-size: 1.5vw;
+    }
+
+}
